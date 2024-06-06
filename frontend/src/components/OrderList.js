@@ -7,7 +7,7 @@ const OrderList = () => {
   useEffect(() => {
     const fetchOrders = async () => {
       try {
-        const response = await axios.get('https://your-backend-url.herokuapp.com/api/orders');
+        const response = await axios.get('https://executivewrites.netlify.app/');
         setOrders(response.data);
       } catch (err) {
         console.error(err);
