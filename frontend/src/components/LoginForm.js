@@ -11,7 +11,7 @@ const LoginForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://your-backend-url.herokuapp.com/api/auth/login', formData);
+      const response = await axios.post('https://executivewrites.netlify.app/', formData);
       console.log(response.data);
       alert('Login successful');
     } catch (err) {
